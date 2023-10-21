@@ -1,6 +1,7 @@
 ﻿#ifndef DRAWALLSHAPES_H
 #define DRAWALLSHAPES_H
 
+#include "Draw.h"
 #include "Shapes.h"
 
 inline void drawAllShapes(const Shapes& shapes) {
