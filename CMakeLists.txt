@@ -5,5 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(CppSoftwareDesign 
-    06_Observer_Classical/main.cpp
+    04_Visitor_Classical/main.cpp
+    # 06_Observer_Classical/main.cpp
 )
