@@ -32,7 +32,7 @@ class Person {
         return (m_observers.erase(observer) > 0u);
     }
 
-    /// @brief 登録してあるObserverに変化を通知する.
+    /// @brief 登録中のObserverに変化を通知する.
     /// @param property
     void notify(const StateChange property) {
         for (auto iter = std::begin(m_observers);
