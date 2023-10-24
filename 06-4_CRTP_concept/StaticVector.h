@@ -1,4 +1,4 @@
-#ifndef STATIC_VECTOR_H
+﻿#ifndef STATIC_VECTOR_H
 #define STATIC_VECTOR_H
 
 #include "DenseVector.h"
@@ -13,7 +13,7 @@ class StaticVector {
     */
 };
 
-/*
+/**
 std::true_typeを継承してIsDenseVectorを特殊化。
 これによってDenseVector conceptを満たせる。
 DynamicVectorのようなTagを継承する方法と比べて、

@@ -1,4 +1,4 @@
-
+﻿
 #include <iostream>
 #include <vector>
 
@@ -7,7 +7,8 @@
 #include "OpenGLSquareStrategy.h"
 #include "Square.h"
 
-int main(int argc, char const* argv[]) {
+int main(int argc, char const* argv[])
+{
     using Shapes = std::vector<std::unique_ptr<Shape>>;
 
     Shapes shapes{};
@@ -23,7 +24,7 @@ int main(int argc, char const* argv[]) {
     return 0;
 }
 
-/*
+/**
 Strategyオブジェクトを関数オブジェクトとして実装。
 
 Pros:

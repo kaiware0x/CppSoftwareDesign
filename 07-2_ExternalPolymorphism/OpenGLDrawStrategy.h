@@ -1,4 +1,4 @@
-#ifndef OPENGL_DRAW_STRATEGY_H
+﻿#ifndef OPENGL_DRAW_STRATEGY_H
 #define OPENGL_DRAW_STRATEGY_H
 
 #include <iostream>
@@ -11,7 +11,7 @@
  */
 class OpenGLDrawStrategy {
    public:
-    explicit OpenGLDrawStrategy(/*描画に必要な引数を渡す*/) {}
+    explicit OpenGLDrawStrategy() {}
 
     void operator()(const Circle& circle) const {
         std::cout << "Draw circle\n";

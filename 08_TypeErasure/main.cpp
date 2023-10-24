@@ -1,23 +1,24 @@
-
+﻿
 #include <iostream>
 #include <memory>
 #include <vector>
 
-void draw(int i) { std::cout << "Draw int free\n"; }
+void draw(int i)
+{
+    std::cout << "Draw int free\n";
+}
 
 #include "Circle.h"
 // #include "OpenGLDrawStrategy.h"
 #include "Shape.h"
-#include "Square.h"
 
-int main(int argc, char const* argv[]) {
+int main(int argc, char const* argv[])
+{
     // 具象図形クラスの生成
     Circle circle{3.14};
 
     // Draw Strategyの生成
-    auto drawer = [](const Circle& c) {
-        std::cout << "Draw circle, radius=" << c.radius() << std::endl;
-    };
+    auto drawer = [](const Circle& c) { std::cout << "Draw circle, radius=" << c.radius() << std::endl; };
 
     // 具象図形と描画Strategyを組み合わせる。
     // コンストラクタでShapeModelがインスタンス化される。

@@ -1,20 +1,21 @@
-cmake_minimum_required(VERSION 3.0.0)
+﻿cmake_minimum_required(VERSION 3.0.0)
 project(CppSoftwareDesign VERSION 0.1.0 LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(CppSoftwareDesign 
-    # 04_Visitor_Classical/main.cpp
-    # 04_Visitor_stdvariant/main.cpp
-    # 05_Strategy_Classical/main.cpp
-    # 05_Strategy_stdfunction/main.cpp
-    # 05_Command/main.cpp
-    # 06_Observer_Classical/main.cpp
-    # 06_Observer_stdfunction/main.cpp
-    # 06-5_CRTP_mixin/main.cpp
-    # 07-2_ExternalPolymorphism/main.cpp
-    # 08_TypeErasure/main.cpp
-    # 09-1_Decorator/main.cpp
-    09-2_Decorator_allocator/main.cpp
-)
+add_executable(Visitor_Classical 04-1_Visitor_Classical/main.cpp)
+add_executable(Visitor_stdvariant 04-2_Visitor_stdvariant/main.cpp)
+add_executable(Strategy_Classical 05-1_Strategy_Classical/main.cpp)
+add_executable(Strategy_stdfunction 05-2_Strategy_stdfunction/main.cpp)
+add_executable(Command 05-3_Command/main.cpp)
+add_executable(Observer_Classical 06-1_Observer_Classical/main.cpp)
+add_executable(Observer_stdfunction 06-2_Observer_stdfunction/main.cpp)
+add_executable(CRTP 06-3_CRTP/main.cpp)
+add_executable(CRTP_concept 06-4_CRTP_concept/main.cpp)
+add_executable(CRTP_mixin 06-5_CRTP_mixin/main.cpp)
+add_executable(Bridge_pimpl 07-1_Bridge_pimpl/main.cpp)
+add_executable(ExternalPolymorphism 07-2_ExternalPolymorphism/main.cpp)
+add_executable(TypeErasure 08_TypeErasure/main.cpp)
+add_executable(Decorator 09-1_Decorator/main.cpp)
+add_executable(Decorator_allocator 09-2_Decorator_allocator/main.cpp)

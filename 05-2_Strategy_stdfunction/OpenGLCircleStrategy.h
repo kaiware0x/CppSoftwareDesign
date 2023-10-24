@@ -1,4 +1,4 @@
-#ifndef OPENGL_CIRCLE_STRATEGY_H
+﻿#ifndef OPENGL_CIRCLE_STRATEGY_H
 #define OPENGL_CIRCLE_STRATEGY_H
 
 #include <iostream>
@@ -8,7 +8,7 @@
 /// @brief アーキテクチャ下位：具象Shapeのみに依存している
 class OpenGLCircleStrategy {
    public:
-    explicit OpenGLCircleStrategy(/*描画に必要な引数を渡す*/) {}
+    explicit OpenGLCircleStrategy() {}
 
     void operator()(const Circle& circle) const {
         std::cout << "Draw circle\n";

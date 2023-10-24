@@ -1,4 +1,4 @@
-#ifndef DENSE_VECTOR_H
+﻿#ifndef DENSE_VECTOR_H
 #define DENSE_VECTOR_H
 
 #include <concepts>
@@ -41,5 +41,6 @@ std::ostream& operator<<(std::ostream& os, const VectorT& vector) {
         os << " " << elem;
     }
     os << ")";
+    return os;
 }
 #endif
